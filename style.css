@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #101720;
+}
+.container {
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+.title {
+  margin-bottom: 2rem;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+  font-size: 2rem;
+  text-align: center;
+  font-style: normal;
+  span {
+    color: red;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 1rem;
+  }
+}
+.photo-gallery {
+  display: flex;
+  gap: 20px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
